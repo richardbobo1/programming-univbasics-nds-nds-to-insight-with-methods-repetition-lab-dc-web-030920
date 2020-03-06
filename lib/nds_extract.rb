@@ -51,8 +51,9 @@ def total_gross(source)
   grand_total = 0 
   row_index = 0 
   while row_index < list_of_directors(source).length do 
-  
+              # measures how many directors in list of d method 
    index_id = list_of_directors(source)[row_index]
+            #sets the hash key based on director name 
     grand_total += directors_totals(source)[index_id]
     row_index += 1 
   end
